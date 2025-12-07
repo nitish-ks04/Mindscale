@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Dark Theme Base === */
+@layer base {
+  body {
+    @apply bg-slate-950 text-gray-100;
+  }
+}
+
+/* === Chatbot Scrollbar Styling === */
+.chat-scroll-area {
+  scrollbar-width: thin;
+  scrollbar-color: #14b8a6 #1e293b;
+}
+
+/* Chrome, Edge, Safari */
+.chat-scroll-area::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-scroll-area::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 1rem;
+}
+
+.chat-scroll-area::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #14b8a6, #06b6d4);
+  border-radius: 1rem;
+  border: 2px solid rgba(30, 41, 59, 0.7);
+}
+
+.chat-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0d9488, #0891b2);
+}
+
+.chat-scroll-area::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* === Fade In Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* === Smooth Slide In === */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.5s ease-out;
+}
+
+/* === Smooth Bounce for Thinking Dots === */
+@keyframes smoothBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce {
+  animation: smoothBounce 1s ease-in-out infinite;
+}
+
+/* === Subtle Glow Effect === */
+@keyframes subtleGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(20, 184, 166, 0.5);
+  }
+}
+
+.animate-glow {
+  animation: subtleGlow 3s ease-in-out infinite;
+}
+
+/* === Card Hover Effect === */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* === Gradient Text === */
+.gradient-text {
+  background: linear-gradient(135deg, #14b8a6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
