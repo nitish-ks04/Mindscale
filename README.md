@@ -1,4 +1,4 @@
-# Mediscale — Medical Assistant
+# Mindscale — Medical Assistant
 
 Comprehensive medical-assistant based upon NLP is a web application combining React frontend, Node/Express backend, MongoDB persistence, and a Python FastAPI-based medical chatbot (powered by LangChain + Google Gemini). The chatbot provides medical Q&A, sentiment-aware responses, and conversational memory for improved context.
 
