@@ -1,0 +1,101 @@
+# ──────────────────────────────
+# Node.js Dependencies
+# ──────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ──────────────────────────────
+# Environment Variables
+# ──────────────────────────────
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ──────────────────────────────
+# Build Output / Production Files
+# ──────────────────────────────
+dist/
+build/
+.tmp/
+.cache/
+
+# ──────────────────────────────
+# Logs
+# ──────────────────────────────
+logs
+*.log
+.log.
+lerna-debug.log*
+
+# ──────────────────────────────
+# Runtime Data
+# ──────────────────────────────
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ──────────────────────────────
+# Coverage & Test Reports
+# ──────────────────────────────
+coverage/
+*.lcov
+
+# ──────────────────────────────
+# IDE & Editor Folders
+# ──────────────────────────────
+.vscode/
+.idea/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+*.code-workspace
+
+# ──────────────────────────────
+# System Files (Mac, Windows, Linux)
+# ──────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ──────────────────────────────
+# TypeScript / Babel / Transpiler Files
+# ──────────────────────────────
+*.tsbuildinfo
+*.tgz
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Test reports / artifacts
+test_report_*.json
+reports/
+
+# ──────────────────────────────
+# Optional: Dependency Locks (if using one package manager)
+# ──────────────────────────────
+# Uncomment the ones you want to ignore if using multiple tools
+
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ──────────────────────────────
+# Temporary / Uploaded Files
+# ──────────────────────────────
+uploads/
+temp/
+tmp/
